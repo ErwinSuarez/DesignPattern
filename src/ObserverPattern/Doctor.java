@@ -32,4 +32,15 @@ public class Doctor implements Observable{
             observ.update(docname,request,patient);
         }
     }
+
+    private void requestSent() {
+        notifyObservers();
+    }
+
+    public void setRequest(String docname, String request, String patient) {
+        this.docname = docname;
+        this.request = request;
+        this.patient = patient;
+        requestSent();
+    }
 }
