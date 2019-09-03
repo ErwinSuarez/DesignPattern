@@ -6,6 +6,8 @@ public class SingletonDriver {
 
         Singleton firstInstance = Singleton.getInstance();
         System.out.println(firstInstance.getInfo().hashCode());
+        Singleton secondInstanc = Singleton.getInstance();
+        System.out.println(secondInstanc.getInfo().hashCode());
 
     }
 }
