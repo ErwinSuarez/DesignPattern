@@ -1,4 +1,5 @@
 package StrategyPattern;
 
-public class BasicCalculationStrategy {
+public interface BasicCalculationStrategy {
+    public int calculation (int a, int b);
 }
